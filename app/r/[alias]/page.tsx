@@ -1,6 +1,8 @@
 import getCollection, { URLS_COLLECTION } from "@/db";
 import { redirect, notFound } from "next/navigation";
 
+export const instant = false; //vercel tries to prerender without this
+
 export default async function RedirectPage({
   params,
 }: {
